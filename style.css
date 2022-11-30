@@ -1,0 +1,345 @@
+* {
+  --Softorange: hsl(35, 77%, 62%);
+  --Softred: hsl(5, 85%, 63%);
+  --Off-white: hsl(36, 100%, 99%);
+  --Grayish-blue: hsl(233, 8%, 79%);
+  --Dark-grayish-blue: hsl(236, 13%, 42%);
+  --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body section {
+  margin: 3rem 10rem 3rem;
+}
+body section Nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body section Nav .linksto {
+  display: flex;
+}
+body section Nav .linksto .sidebarslink {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 20rem;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body section Nav .linksto .closebtn {
+  display: none;
+}
+body section Nav .linksto a {
+  text-decoration: none;
+  color: var(--Dark-grayish-blue);
+  cursor: pointer;
+}
+body section Nav .linksto a:hover {
+  color: var(--Softred);
+  cursor: pointer;
+}
+body section Nav .bars {
+  display: none;
+}
+body section .firstlayout {
+  display: flex;
+  flex-direction: row;
+  margin: 3rem 0 0;
+}
+body section .firstlayout .start {
+  display: flex;
+  flex-direction: column;
+}
+body section .firstlayout .start .boxmage {
+  width: auto;
+}
+body section .firstlayout .start .boxmage img {
+  width: 60rem;
+  height: 25rem;
+}
+body section .firstlayout .start .start-1 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+body section .firstlayout .start .start-1 h2 {
+  font-size: 4rem;
+  font-weight: 800;
+  width: 50%;
+  padding-right: 2rem;
+  width: 35%;
+}
+body section .firstlayout .start .start-1 .start-2 {
+  width: 50%;
+  padding-right: 2rem;
+  padding-top: 4rem;
+  line-height: 1.5;
+}
+body section .firstlayout .start .start-1 .start-2 p {
+  width: 80%;
+  color: var(--Grayish-blue);
+  font-size: 20px;
+}
+body section .firstlayout .start .start-1 .start-2 button {
+  width: 10rem;
+  outline: none;
+  border: none;
+  padding: 1rem 2rem;
+  background-color: var(--Softred);
+  color: var(--Off-white);
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+body section .firstlayout .start .start-1 .start-2 button:hover {
+  background-color: var(--Very-dark-blue);
+}
+body section .firstlayout .end {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 40%;
+  background-color: var(--Very-dark-blue);
+  color: white;
+  padding: 1rem 1.2rem 0;
+}
+body section .firstlayout .end .mids h2 {
+  color: var(--Softorange);
+  font-size: 3rem;
+}
+body section .firstlayout .end .mids .textsdot {
+  padding: 1rem 0;
+}
+body section .firstlayout .end .mids .nontextdots {
+  padding: none !important;
+}
+body section .firstlayout .end .mids .textsdot h3,
+body section .firstlayout .end .mids .nontextdots h3 {
+  font-weight: 700;
+}
+body section .firstlayout .end .mids .textsdot h3:hover,
+body section .firstlayout .end .mids .nontextdots h3:hover {
+  color: var(--Softorange);
+}
+body section .firstlayout .end .mids .textsdot p,
+body section .firstlayout .end .mids .nontextdots p {
+  font-weight: 300;
+  color: var(--Grayish-blue);
+}
+body section .footer {
+  display: flex;
+  flex-direction: row;
+  margin: 7rem 1rem;
+}
+body section .footer .card {
+  display: flex;
+  flex-direction: row;
+}
+body section .footer .card .cardimage {
+  margin-right: 1rem;
+}
+body section .footer .card .cardimage img {
+  width: 10rem;
+  height: 11rem;
+}
+body section .footer .card .cardtexts {
+  margin-top: 0;
+  padding-top: 0;
+}
+body section .footer .card .cardtexts h2 {
+  color: var(--Grayish-blue);
+  font-size: 3rem;
+  line-height: 0.4;
+}
+body section .footer .card .cardtexts h4 {
+  font-size: 1.5rem;
+  line-height: 0.2;
+}
+body section .footer .card .cardtexts h4:hover {
+  color: var(--Softred);
+}
+body section .footer .card .cardtexts p {
+  color: var(--Dark-grayish-blue);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  }
+  body section {
+    margin: 3rem 2rem 3rem;
+  }
+  body section Nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body section Nav .linksto {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  body section Nav .linksto .sidebarslink {
+    display: flex;
+    flex-direction: column;
+    margin: 6rem 0 0 1rem !important;
+    padding: 0 0 3rem !important;
+  }
+  body section Nav .linksto .closebtn {
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+  }
+  body section Nav .linksto a {
+    text-decoration: none;
+    color: var(--Dark-grayish-blue);
+    cursor: pointer;
+    padding-bottom: 3rem;
+  }
+  body section Nav .linksto a:hover {
+    color: var(--Softred);
+    cursor: pointer;
+  }
+  body section Nav .bars {
+    display: flex;
+    cursor: pointer;
+  }
+  body section .firstlayout {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0 0;
+  }
+  body section .firstlayout .start {
+    display: flex;
+    flex-direction: column;
+  }
+  body section .firstlayout .start .boxmage {
+    width: auto;
+  }
+  body section .firstlayout .start .boxmage img {
+    width: 100%;
+    height: 25rem;
+  }
+  body section .firstlayout .start .start-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+  body section .firstlayout .start .start-1 h2 {
+    font-size: 4rem;
+    font-weight: 800;
+    padding-right: 0 !important;
+    width: 100%;
+  }
+  body section .firstlayout .start .start-1 .start-2 {
+    width: 100%;
+    padding-right: 0 !important;
+    padding-top: 0.2rem;
+    line-height: 1.3;
+  }
+  body section .firstlayout .start .start-1 .start-2 p {
+    width: 100%;
+    color: var(--Grayish-blue);
+    font-size: 25px;
+  }
+  body section .firstlayout .start .start-1 .start-2 button {
+    width: 10rem;
+    outline: none;
+    border: none;
+    padding: 1rem 2rem;
+    background-color: var(--Softred);
+    color: var(--Off-white);
+    font-size: 1rem;
+    margin-top: 0.2rem;
+  }
+  body section .firstlayout .start .start-1 .start-2 button:hover {
+    background-color: var(--Very-dark-blue);
+  }
+  body section .firstlayout .end {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    background-color: var(--Very-dark-blue);
+    color: white;
+    margin: 1.5rem 0 0;
+    padding: 1rem 1.2rem 0;
+  }
+  body section .firstlayout .end .mids h2 {
+    color: var(--Softorange);
+    font-size: 3rem;
+  }
+  body section .firstlayout .end .mids .textsdot {
+    padding: 1rem 0;
+  }
+  body section .firstlayout .end .mids .nontextdots {
+    padding: none !important;
+  }
+  body section .firstlayout .end .mids .textsdot h3,
+body section .firstlayout .end .mids .nontextdots h3 {
+    font-weight: 700;
+  }
+  body section .firstlayout .end .mids .textsdot h3:hover,
+body section .firstlayout .end .mids .nontextdots h3:hover {
+    color: var(--Softorange);
+  }
+  body section .firstlayout .end .mids .textsdot p,
+body section .firstlayout .end .mids .nontextdots p {
+    font-weight: 300;
+    color: var(--Grayish-blue);
+  }
+  body section .footer {
+    display: flex;
+    flex-direction: column;
+    margin: 7rem 1rem;
+  }
+  body section .footer .card {
+    display: flex;
+    flex-direction: row;
+  }
+  body section .footer .card .cardimage img {
+    width: 10rem;
+    height: 11rem;
+  }
+  body section .footer .card .cardtexts {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    padding-top: 0;
+  }
+  body section .footer .card .cardtexts h2 {
+    color: var(--Grayish-blue);
+    font-size: 3rem;
+    line-height: 0.4;
+  }
+  body section .footer .card .cardtexts h4 {
+    font-size: 1.112rem;
+    line-height: 0.2;
+  }
+  body section .footer .card .cardtexts h4:hover {
+    color: var(--Softred);
+  }
+  body section .footer .card .cardtexts p {
+    color: var(--Dark-grayish-blue);
+  }
+}/*# sourceMappingURL=style.css.map */
