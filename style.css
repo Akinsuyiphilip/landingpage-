@@ -333,7 +333,7 @@ body section .firstlayout .end .mids .nontextdots p {
     line-height: 0.4;
   }
   body section .footer .card .cardtexts h4 {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
   body section .footer .card .cardtexts h4:hover {
     color: var(--Softred);
